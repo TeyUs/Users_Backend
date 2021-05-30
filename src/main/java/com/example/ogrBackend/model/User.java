@@ -1,5 +1,6 @@
 package com.example.ogrBackend.model;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "users")
+@ApiModel
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
